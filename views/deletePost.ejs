@@ -1,0 +1,12 @@
+<%- include("partials/header_with_data") %>
+<div class="postChange">
+    
+<h1>Enter The Title of Post to Delete</h1>
+
+<form action="/admin/deletePost" method="POST">
+    <input type="text" name="deletePostTitle"/><input type="submit" value="Go" class="adminActionButtons"/> 
+</form>
+
+</div>
+
+<%- include("partials/footer") %>

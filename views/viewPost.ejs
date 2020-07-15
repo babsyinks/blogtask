@@ -1,0 +1,72 @@
+<%- include("partials/header_with_data") %>
+<div class="casing">
+ <h1 class="heading"><%=post.title%></h1>
+
+<% if(post.content.length > 3000){ %>
+    <p class="posts"><%=post.content%></p>
+<%}else{%>
+<p class="posts content"><%=post.content%></p>
+<%}%>
+
+<% if(profileLoaded === 'loaded'){%>             
+<% if(post.comments.length>0){ %>
+    <div class="commentWrapper">
+    <h2>Comments</h2> 
+    </div>
+    <% commentArray.forEach(comment=>{ %>
+        <div class="commentContainer">
+            <div class="commentPosted">
+            <div class="person"><p><img src="/profile/<%=comment.commentBy%>/profilePic" width="20" height="20"/><span class="commentName capitalize"><%= comment.postedBy %></span></p></div>
+            <p><%=comment.comment%></p>
+            <span class="postedOn">Posted on:</span><span class="posted"><%=comment.posted%></span> 
+            </div>
+        </div>
+        
+    <%})%>
+    <div class="commentWrapper">
+        <form method="POST" action="/blog/comment">
+         <div class="person"><p><img src="/profile/<%=id%>/profilePic" width="20" height="20"><span class="commentName capitalize"><%=surname %> <%=firstName %></span></p></div>
+         <div class="comment">
+            <textarea placeholder="Write your comment..." name="comment"></textarea>
+            <br>  
+            <input type="hidden" name="post_id" value="<%=post._id%>" />  
+            <button value="Submit Comment" type="submit">Submit Comment</button>
+         </div>
+        </form>
+        
+        </div>
+
+        
+        
+   
+
+<%}else{%>  
+    <div class="commentWrapper">
+        <h2>Comments</h2>  
+        <h3>No comment yet</h3>
+        <form method="POST" action="/blog/comment">
+            <div class="person"><p><img src="/profile/<%=id%>/profilePic" width="20" height="20"><span class="commentName capitalize"><%=surname %> <%=firstName %></span></p></div>
+                <div class="comment">
+                    <textarea placeholder="Write your comment..." name="comment"></textarea>
+                    <br>   
+                    <input type="hidden" name="post_id" value="<%=post._id%>" />
+                    <button value="Submit Comment" type="submit">Submit Comment</button>
+                </div>
+
+        </form>
+      
+        
+    </div>
+    
+    
+<%}%> 
+
+<%}else{%>
+<p class="posts">You need to create your profile before you can view or post comments. <a href="/profile">Create Profile Now</a></p>
+<%}%>
+       
+<br>
+<em><span class="emphasis">Date Published: </span> <%= post.datePosted %></em>   
+</div>
+
+<%- include("partials/footer") %>    

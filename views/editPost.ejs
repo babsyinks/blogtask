@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<div class="myPost">
+<form action='/admin/editPost/update' method="POST">
+<h1>Edit Post</h1>
+<h2>Title</h2>
+<input type="text" name="title" value="<%= post.title %>">
+<h2> Post</h2>
+<textarea cols="100" rows="20" name="content">
+<%= post.content %>
+</textarea>
+<br/>
+<input type="hidden" name="id" value="<%= post._id %>">
+<input type="submit" value="Submit Post" class="adminActionButtons">
+
+</form>
+
+</div>
+
+
+<%- include("partials/footer") %>
