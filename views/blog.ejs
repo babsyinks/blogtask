@@ -1,0 +1,38 @@
+<%- include("partials/header_with_data") %>
+
+<h1 class="heading">Blog Posts</h1>
+<hr>
+<hr>
+<div class="blogs">
+
+  <% posts.forEach(post=>{ %>
+    <div class="blogWrapper"> 
+       <h2 class="heading"><%= post.title %></h2>
+      <% if(post.content.length>300){ %>
+        <p id = "<%= post._id %>" class="posts"><%= post.content.substring(0,300) %> <a class="emphasis" href="/blog/<%= post._id %>">more</a></p>
+       <%}else{%>
+       
+        <p id = "<%= post._id %>" class="posts"><%= post.content %></p>
+       <%}%>
+       <div class="commentWrapper">
+         <a href="/blog/<%= post._id %>"><%=post.comments.length%> comments</a>
+       </div>
+        
+  <em><span class="emphasis">Date Published: </span><span> <%= post.datePosted %></span></em>
+  <p class="center">*************************************</p>
+  </div> 
+    
+<%}) %>
+<% if(pages>1){ %>
+<div class="paginationGrp">
+  <a href="/blog?skip=<%=prevSkip%>">Prev</a>
+<%for(i = 0;i<pages;i++){%>
+  <a href="/blog?skip=<%=i*10%>" class="pagination"><%=i+1%></a>
+<%}%>
+<a href="/blog?skip=<%=nextSkip%>">Next</a>
+</div>
+<% }%>
+  
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,24 @@
+<%- include("partials/header_with_data") %>
+<div class="wrapperAdmin">
+<div class="wrapInput register adminSignIn">
+  <h1>Register New Admin</h1>
+  
+  <div class="center">
+  <form action="/register" method="POST">
+  <label for="email">Email:</label><input type="email" name="username" placeholder="Enter Email address."/>
+  <br>
+  <label for="password">Password:</label><input type="password" name="password" placeholder="Enter Password."/>
+  <br>
+  <label for="password_again">Password Again:</label><input type="password" name="password_again" placeholder="Re-enter Password"/>
+  <br>
+  <input type="submit" value="Register"/>
+  <input type="hidden" value="admin" name="admin">
+  </form>
+  </div>
+  
+  </div>
+  
+  
+  <p class="center validation"><%= adminValidator %></p>
+</div>
+<%- include("partials/footer") %>

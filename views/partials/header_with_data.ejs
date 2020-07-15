@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="icon" href="images/desert_pCy_icon.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="header">
+    <%if(loggedIn === "loggedIn"){%>
+
+      <% if(profileLoaded === "loaded"){%>
+      
+    <div class="topright">
+         <span class="welcomeMsg">Welcome</span><span class="names capitalize"><%= surname %> <%= firstName %></span>
+         <span class="profilePic"><img src="/profile/<%=id%>/profilePic"></span>
+      
+     
+        <a href=<%= url %> ><%= headerData %></a>
+        <a href="/acctMgtEdit" class="settings"><i class="fa fa-cog"></i></a>
+      </div>
+
+      <div class="topleft topleftProfile">
+        <a href="http://localhost:3000"><i class="fa fa-home"></i></a>
+      </div>
+      <%}else{%>
+        <div class="topright">
+      
+          <span class="profilePic"></span>
+       
+      
+         <a href=<%= url %> ><%= headerData %></a>
+         <a href="/acctMgtNew" class="settings"><i class="fa fa-cog"></i></a>
+       </div>
+ 
+       <div class="topleft">
+         <a href="http://localhost:3000" ><i class="fa fa-home"></i></a>
+       </div>
+        <%}%>
+   <%}else{%>
+   
+    <div class="topright">
+
+      <a class="topnav" href=<%= url %> ><%= headerData %></a>
+    
+    </div>
+    <div class="topleft">
+      <a href="http://localhost:3000"><i class="fa fa-home"></i></a>
+    </div>  
+    <%}%>
+ </div>   

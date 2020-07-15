@@ -1,0 +1,19 @@
+<%- include("partials/header_with_data") %>
+<div class="postChange">
+<h1>Enter The Title of Post to Edit</h1>
+
+<br>
+<form action="/admin/editPost" method="POST">
+    <div>
+        <input type="text" name="editTitle"/>
+    </div>
+    <div>
+      <input type="submit" value="Go" class="adminActionButtons"/>  
+    </div>
+    
+</form>
+<p class="validation center"><%=validation%></p>
+</div>
+
+
+<%- include("partials/footer") %>
