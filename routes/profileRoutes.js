@@ -1,4 +1,4 @@
-const{User,passport,router} = require('../passaportLocal/passportLocal')
+const{User,router} = require('../passaportLocal/passportLocal')
 const{signOut} = require('../links')
 const auth = require('../middlewares/userAuth')
 const sharp = require('sharp')
