@@ -1,4 +1,18 @@
-<%- include("partials/header_with_data") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link rel="stylesheet" href="/css/styles.css" >
+    <link rel="icon" href="/images/desert_pCy_icon.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/js/handleLikes.js"></script>
+</head>
 <div class="casing">
  <h1 class="heading"><%=post.title%></h1>
 
@@ -16,8 +30,20 @@
     <% commentArray.forEach(comment=>{ %>
         <div class="commentContainer">
             <div class="commentPosted">
-            <div class="person"><p><img src="/profile/<%=comment.commentBy%>/profilePic" width="20" height="20"/><span class="commentName capitalize"><%= comment.postedBy %></span></p></div>
+            <% if(comment.user){ %>
+                <div class="person"><p><img src="/profile/<%=comment.commentBy%>/profilePic" width="20" height="20"/><span class="commentName capitalize"><%= comment.postedBy %></span></p></div>
+            <%}else{%>
+                <div class="person"><p><span class="commentName capitalize"><%= comment.postedBy %></span></p></div>
+            <%}%>
             <p><%=comment.comment%></p>
+            <div class="wrap_lk_unlk">
+                <span class="likeWrapper">
+                    <button><a onclick="handleLikes('/blog/likeOrUnlike/<%=post._id%>/<%=comment._id%>/like')" class="thumbsUp"><i class="fa fa-thumbs-up "></i></a></button><span class="likeOrUnlike"><%= comment.likes %></span>
+                </span>
+                <span class="unLikeWrapper">
+                 <button><a onclick="handleLikes('/blog/likeOrUnlike/<%=post._id%>/<%=comment._id%>/unLike')" class="thumbsDown"><i class="fa fa-thumbs-down"></i></a></button><span class="likeOrUnlike"><%= comment.unLikes%></span>
+                </span>
+            </div>
             <span class="postedOn">Posted on:</span><span class="posted"><%=comment.posted%></span> 
             </div>
         </div>
@@ -31,15 +57,10 @@
             <br>  
             <input type="hidden" name="post_id" value="<%=post._id%>" />  
             <button value="Submit Comment" type="submit">Submit Comment</button>
+            <a href="/blog"><button value="Submit Comment" type="button">View All Topics</button></a>
          </div>
         </form>
-        
         </div>
-
-        
-        
-   
-
 <%}else{%>  
     <div class="commentWrapper">
         <h2>Comments</h2>  
@@ -51,6 +72,7 @@
                     <br>   
                     <input type="hidden" name="post_id" value="<%=post._id%>" />
                     <button value="Submit Comment" type="submit">Submit Comment</button>
+                    <a href="/blog"><button value="Submit Comment" type="button">View All Topics</button></a>
                 </div>
 
         </form>

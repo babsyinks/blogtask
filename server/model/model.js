@@ -6,7 +6,7 @@ const validator = require('validator')
 mongoose.set("useCreateIndex", true);
 
 const mongoose1 = require('../conn').mongoose1
-const mongoose2 = require('../conn').mongoose2
+//const mongoose2 = require('../conn').mongoose2
 
 const findOrCreate = require('mongoose-findorcreate') 
 
@@ -35,7 +35,15 @@ const blogSchema = new mongoose.Schema({
                 type:String,
                 trim:true,  
             },
-            posted:Date
+            posted:Date,
+            likes:{
+                type:[mongoose.Schema.Types.ObjectId],
+                default:[]
+            },
+            unLikes:{
+                type:[mongoose.Schema.Types.ObjectId],
+                default:[]
+            }
         }],
         default:[]
     }
@@ -108,6 +116,6 @@ const BlogPost = mongoose1.model('Blog',blogSchema)
 
 const Profile = mongoose1.model('Profile',profileSchema)
 
-const Timer = mongoose2.model('TimerList',timerSchema)
+const Timer = mongoose1.model('TimerList',timerSchema)
 
 module.exports = {User,BlogPost,Profile,Timer}

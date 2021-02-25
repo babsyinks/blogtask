@@ -67,7 +67,7 @@ router.post('/signIn',(req,res)=>{
 router.get('/signOut',(req,res)=>{
 
   req.logout()
-  res.redirect('/')
+  res.redirect('/signIn')
 })
 
 module.exports = router

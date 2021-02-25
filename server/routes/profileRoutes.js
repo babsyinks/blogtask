@@ -42,7 +42,7 @@ router.post('/profile',auth,upload.single('file'),async (req,res)=>{
     res.render('adminStatusMessage',{status:'Profile Successfully Created',adminRedirect:`/blog`})
 
 },(err,req,res,next)=>{
-    res.status(400).send({error:err.message})
+    res.status(400).send(err.message)
 })
 
 router.get('/profile/:id/profilePic',auth,async (req,res)=>{

@@ -2,13 +2,13 @@ const express = require('express')
 const{signOut,adminSignIn} = require('../links')
 const auth = require('../middlewares/adminAuth')
 const{User,BlogPost,passport,router} = require('../passaportLocal/passportLocal')
-router.use('/admin',express.static('public'))
+/* router.use('/admin',express.static('public'))
 router.use('/admin/editPost',express.static('public'))
-router.use('/adminRedirect',express.static('public'))
+router.use('/adminRedirect',express.static('public')) */
 
-router.get('/',(req,res)=>{
+/* router.get('/',(req,res)=>{
   res.redirect('/signIn')
-})
+}) */
 
 router.get('/signIn',(req,res)=>{
 res.render('signIn',{validation:'',validateSignIn:'',
