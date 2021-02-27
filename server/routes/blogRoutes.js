@@ -5,8 +5,9 @@ const {BlogPost,User} = require('../model/model')
 const auth = require('../middlewares/userAuth')
 const dateTime = require('../postedDateTime')
 const{signOut} = require('../links')
+const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
 router.use(bodyParser.urlencoded({extended:true}))
-router.use(express.static('public'))
+router.use(express.static(`${publicDir}`))
 
 router.get('/',auth,(req,res)=>{
     let currentSkip = +req.query.skip

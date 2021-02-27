@@ -18,7 +18,7 @@ app.use(profileRoutes)
 app.use('/blog',blogRoutes)
 app.use('/auth/facebook',facebookRoutes)
 app.get('*',(req,res)=>{
-    res.redirect('/signIn')
+    res.redirect('/')
 })
 app.use((err,req,res,next)=>{ 
     console.log(err.message) 

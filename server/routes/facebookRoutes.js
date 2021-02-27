@@ -8,9 +8,10 @@ const router = express.Router()
 const FacebookStrategy = require('passport-facebook').Strategy
 const session = require('express-session')
 const User = require('../model/model').User 
+const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
 router.use(session({secret:process.env.SESSION_SECRET,resave:false,saveUninitialized:false}))
 router.use(bodyParser.urlencoded({extended:true}))
-router.use(express.static('public'))
+router.use(express.static(`${publicDir}`))
 router.use(passport.initialize()) 
 router.use(passport.session())
 

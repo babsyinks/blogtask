@@ -8,9 +8,9 @@ const currentDirectoryArray = __dirname.split(path.sep)
 const parentDirectoryArray = currentDirectoryArray.slice(0,currentDirectoryArray.length - 1)
 const parentDirectory = parentDirectoryArray.join(path.sep)
 const DATAFILE = path.join(parentDirectory,'data.json')
-
+const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
 router.use(bodyParser.json())
-router.use('/',express.static(path.join('./','public')))
+router.use('/',express.static(path.join('./',`${publicDir}`)))
 router.use((req,res,next)=>{
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
     res.setHeader('Pragma', 'no-cache');

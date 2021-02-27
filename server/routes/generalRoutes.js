@@ -1,11 +1,10 @@
-const express = require('express')
 const path = require('path')
 const{signOut,adminSignIn} = require('../links')
 const auth = require('../middlewares/adminAuth')
 const{User,BlogPost,passport,router} = require('../passaportLocal/passportLocal')
-
+const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
 router.get('/',(req,res)=>{
-  res.sendFile(__dirname,path.join())
+  res.sendFile(__dirname,path.join(__dirname,'','',`${publicDir}`,'index.html'))
 }) 
 
 router.get('/signIn',(req,res)=>{
