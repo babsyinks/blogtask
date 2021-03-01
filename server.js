@@ -8,9 +8,9 @@ const blogRoutes = require('./server/routes/blogRoutes')
 const facebookRoutes = require('./server/routes/facebookRoutes')
 const timerRoutes = require('./server/routes/timerRoutes')
 const profileRoutes = require('./server/routes/profileRoutes')
-
+const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
 app.set('view engine','ejs')  
-app.use(express.static(path.join(__dirname,'client','public')))
+app.use(express.static(path.join(__dirname,'client',`${publicDir}`)))
 app.use(generalRoutes)
 app.use(localRoutes)
 app.use(timerRoutes)
@@ -18,7 +18,7 @@ app.use(profileRoutes)
 app.use('/blog',blogRoutes)
 app.use('/auth/facebook',facebookRoutes)
 app.get('*',(req,res)=>{
-    res.redirect('/')
+    res.sendFile(path.join(__dirname,'client',`${publicDir}`,'index.html'))
 })
 app.use((err,req,res,next)=>{ 
     console.log(err.message) 
