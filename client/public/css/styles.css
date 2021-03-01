@@ -1,0 +1,1686 @@
+body{
+    margin:0px;
+}
+
+.wrapper{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url('/images/user.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.topleft{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding-left: 15px;
+    margin-top: -30px;
+    width: 30%;
+    
+}
+
+.topleft a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.topright{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding-right: 15px;
+    padding-top: 15px;
+    
+    
+    
+}
+.topright a{
+     text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.topnav{
+margin-top: 22px;
+}
+.profilePic{
+    border-radius: 50%;
+    background-color: white;
+    width:50px;
+    height: 50px;
+    margin-right: 10px;
+    
+}
+
+.profilePic img{
+    border-radius: 50%;
+}
+
+.settings{
+    margin-left: 10px;
+}
+
+.welcomeMsg{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding-right: 6px;
+}
+
+.names{
+    font-style: oblique;
+    padding-left: 5px;
+    font-size: 18px;
+    color: white;
+    padding-right: 12px;
+    margin-bottom: 5px;
+}
+
+
+.myPost{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.myPost form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5em;
+    padding-right: 5em;
+    width: 40%;
+}
+
+.myPost textarea{
+    width: 100%;
+    height: 40vh;
+    
+}
+
+.myPost input[type="submit"]{
+    border: 2px solid blueviolet;
+}
+
+.myPost input[type="submit"]:hover{
+    border: 2px solid black;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+.postChange{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.postChange form{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postChange input[type="submit"],.postChange input[type = "button"]{
+    
+    border: 2px solid blueviolet;
+}
+
+.postChange input[type="submit"]:hover,.postChange input[type = "button"]:hover{
+    border: 2px solid black;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+/*.postChange input[type="text"]{
+   
+}
+*/
+.center{display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+    height: 60%;
+}
+
+.center form{
+    height: 100%;
+    width: 100%;
+}
+
+.validation{
+    color:red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 0.2em;
+}
+h1,h2{
+    text-align: center;
+    font-family: 'Playfair Display SC';
+}
+p,em{
+   font-family: "Montserrat"; 
+}
+p.posts,em{
+    line-height: 4vh;
+    font-size: 18px;
+    padding:5px 40px;  
+   
+}
+.emphasis{
+    color: rgb(8, 8, 172);
+    font-weight: bold;
+}
+.heading{
+ font-family: 'Roboto', sans-serif;;
+ color: rgb(3, 3, 121);
+}
+
+h2.heading{
+    color: rgb(47, 0, 92);
+}
+
+.header{
+    width:100%;
+    height: 15vh;
+    background-color:black ;
+    opacity:0.7;
+    font-family: sans-serif;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 15vh;
+    background-color:black ;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0px;
+    opacity:0.7;
+    font-family: sans-serif;
+}
+.wrapInput{
+width: auto;
+/*margin: 0px auto 0px;*/
+border-radius:4%;
+height:50vh;
+}
+
+.blogWrapper{
+    
+    margin-bottom: 10px;
+    border-radius: 1%;
+}
+
+.blogs{
+    min-height: 53vh;
+}
+
+/* admin section*/
+input[type = "submit"].adminActionButtons{
+    padding: 1em 8em;
+    padding-right: 9em;
+    margin-left: 8px;
+}
+.adminActionButtons{
+    padding: 1em 4em;
+}
+.adminTasks{
+display: flex;
+justify-content: center;
+padding:1.2rem;
+
+}
+/*
+p.content{
+    
+}
+*/
+
+
+.casing{
+    min-height:68vh;
+}
+input[value="Make A Blog Post"]{
+border: 2px solid green;
+font-size: 1rem;
+padding: 1em 8.8em;
+}
+
+input[value="Make A Blog Post"]:hover{
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    }
+
+input[value="Edit A Blog Post"]{
+    border: 2px solid blue;
+    font-size: 1rem;
+    padding: 1em 9.2em;
+    }
+
+
+input[value="Edit A Blog Post"]:hover{
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    }    
+
+
+    
+input[value="Delete A Blog Post"]{
+    border: 2px solid red;
+    font-size: 1rem;
+    padding: 1em 8.8em;
+    }
+
+
+input[value="Delete A Blog Post"]:hover{
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    } 
+    
+    
+input[value="Register A New Admin"]{
+    border: 2px solid blueviolet;
+    font-size: 1rem;
+    padding: 1em 8em;
+    }
+
+input[value="Register A New Admin"]:hover{
+    border: 2px solid black;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    }         
+.adminTasks input{
+      margin-top: 0.07rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .wrapAcct{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profileMgt{
+        border: 2px solid green;
+        font-size: 1rem;
+        padding: 1em 8em;
+    }
+
+    .deleteAcct{
+        border: 2px solid red;
+        font-size: 1rem;
+        padding: 1em 8em;
+    }
+
+    .profileMgt:hover{
+        color:white;
+        border:2px solid black;
+        background-color: green;
+    }
+
+    .deleteAcct:hover{
+        color:white;
+        border:2px solid black;
+        background-color: red;
+    }
+
+/* Sign in and registration section*/
+
+.signIn{
+    border: 2px solid  rgb(13, 13, 182);
+    color:rgb(13, 13, 182) ;
+}
+
+.register{
+    border: 2px solid rgb(88, 0, 170);
+    color:rgb(88, 0, 170);
+    padding-bottom: 20px;
+}
+
+input{
+    margin: 1em;
+}
+
+input[name="username"],input[type = "password"],input[type = "email"]{
+    opacity: 0.5;
+    border:1.3px solid black;
+    border-radius: 2%;
+    /* width:70%; */
+    height:15%;
+    padding: 5px;
+}
+input[type = 'submit'],input[type = 'button']{
+    background: transparent;
+    /* margin-left: 23px; */
+}
+input[value = "Register"]{
+   /*  margin-left: 25px; */
+    padding: 1em 10em;
+}
+
+label[for = "signIn_password"]{
+    margin-left: 7px;
+}
+
+input[placeholder="Enter Registered Email"]{
+    margin-left: 6px;   
+}
+
+input[placeholder="Enter Password"]{
+    margin-left: 6px;   
+}
+
+input[placeholder="Enter Email address."]{
+    margin-left: 14px;
+}
+
+input[placeholder="Enter Password."]{
+    margin-left: 14px;
+}
+label{
+    color: black;
+    
+}
+
+label[for="password"]{
+display: inline-block;
+width:70px;
+text-align: right;
+}
+
+label[for="email"]{
+display: inline-block;
+width:70px;
+text-align: right;
+}
+
+label[for="password_again"]{
+    display: inline-block;
+    width:70px;
+    
+    text-align: right;
+    }
+
+input[value = "Log In"]{
+    border:2px solid rgb(13, 13, 182);
+    font-weight: bold;
+    padding: 1em 10em;
+    }
+
+input[value = "Log In"]:hover{
+border:2px solid black;
+font-weight: bold;
+background-color: rgb(13, 13, 182);
+color: white;
+}
+
+input[value = "Register"]{
+    border:2px solid rgb(88, 0, 170);
+    font-weight: bold;
+    }
+
+input[value = "Register"]:hover{
+    border:2px solid black;
+    font-weight: bold;
+    background-color: rgb(88, 0, 170);
+    color: white;
+    }
+
+button,input[type = 'button'], input[type = 'submit']{
+    cursor: pointer;
+}
+
+.register h1{
+    margin-bottom: 0px;
+}
+
+.register_group{
+    margin-top: 0px;
+}
+
+.fb_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .btn:hover{
+    opacity: 1
+  }
+
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+
+  .wrapperAdmin{
+    min-height: 66.2vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url('/images/silver-and-black-laptop-computer.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 25px;
+  }
+
+  .adminSignIn .center label{
+    color:white;
+    font-weight: bold;
+  }
+
+ 
+/*pagination */
+.pagination{
+    padding: 5px 10px;
+    margin: 5px;
+    border:2px solid rgb(88, 0, 170);
+    text-decoration: none;
+    color:black;
+}
+
+.pagination:hover{
+    background-color: rgb(88, 0, 170);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.paginationGrp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationGrp a{
+    text-decoration: none;
+}
+.paginationGrp a:hover{
+    font-weight: bold;
+}
+
+/* profile*/
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: url("/images/profile1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+.profile p {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.profileDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(9, 78, 9);
+    width:35%;
+    padding: 1em;
+}
+
+.profileDetails label{
+    font-size: 18px;
+}
+
+.profileDetails input[name = "surname"]{
+    margin-left: 29px;
+}
+
+.profileDetails input[type = "text"]{
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(9, 78, 9);
+}
+
+.profileDetails input[type = "submit"]{
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    margin-left: 80px;
+    border: 2px solid green;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.profileDetails input[type = "submit"]:hover{
+    width: 310px;
+    height: 35px;
+    border: 2px solid black;
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1289px){
+    .profileDetails{
+       
+        width:40%;
+        
+    }
+}
+
+@media only screen and (max-width:1127px){
+    .profileDetails{
+       
+        width:45%;
+    
+    }
+}
+
+@media only screen and (max-width:1003px){
+    .profileDetails{
+       
+        width:50%;
+    
+    }
+}
+
+@media only screen and (max-width:902px){
+    .profileDetails{
+       
+        width:55%;
+    
+    }
+}
+
+@media only screen and (max-width:820px){
+    .profileDetails{
+       
+        width:65%;
+    
+    }
+}
+
+@media only screen and (max-width:694px){
+    .profileDetails{
+       
+        width:75%;
+    
+    }
+}
+
+@media only screen and (max-width:601px){
+    .profileDetails{
+       
+        width:85%;
+    
+    }
+}
+
+@media only screen and (max-width:531px){
+  
+    
+}
+
+@media only screen and (min-width:1380px){
+/*     .wrapInput{
+        width:28%;
+    } */
+    .wrapperAdmin {
+        min-height: 67.2vh;
+    }
+    .adminSignIn{
+        min-height: 40vh;
+    }
+}
+
+@media only screen and (max-width:1379px){
+  .wrapInput{
+     /*  width:30%; */
+      height: 55vh;
+  }
+  .wrapperAdmin {
+    min-height: 67.4vh;
+}
+.adminSignIn{
+    min-height: 40vh;
+}
+}
+
+@media only screen and (max-width:1379px) and (max-height:700px){
+  .adminSignIn{
+      min-height: 45vh;
+  }
+  }
+
+@media only screen and (max-width:1290px){
+/*   .wrapInput{
+      width: 32%;
+      }
+ */
+   .adminSignIn{
+    min-height:10vh;
+   }
+}
+
+@media only screen and (max-width:1100px){
+/*   .wrapInput{
+      width: 39%;
+      } */
+      .wrapperAdmin {
+        min-height: 68.2vh
+    }
+}
+
+@media only screen and (min-height:1300px){
+  .wrapInput{
+      height:30vh;
+  }
+}
+
+@media only screen and (max-height:1030px) and (max-width:800px){
+    .wrapInput{
+      height: 40vh;
+    }
+  } 
+  
+@media only screen and (max-width:1100px) and (orientation:landscape){
+    .wrapInput{
+      height: 60vh;
+    }
+    .adminSignIn{
+        height: 60vh;
+        
+    }
+    .wrapperAdmin {
+        min-height: 66.2vh;
+    }
+  }
+
+@media only screen and (max-width:1100px) and (orientation:landscape) and (max-height:610px){
+    
+    .adminSignIn{
+        width: 40%;
+        
+    }
+  }
+
+/* @media only screen and (max-width:980px){
+  .wrapInput{
+      width: 45%;
+      }
+}
+
+@media only screen and (max-width:900px){
+  .wrapInput{
+      width: 50%;
+      }
+} */
+
+@media only screen and (max-width:850px) and (orientation:landscape){
+    .wrapInput{
+        /* width: 49%; */
+        height:90vh;
+        
+        }
+
+  
+}
+
+@media only screen and (max-width:770px){
+/*   .wrapInput{
+      width: 53%;
+      } */
+
+      .wrapperAdmin {
+        min-height: 68.2vh;
+    }
+
+}
+
+@media only screen and (max-width: 770px) and (orientation:landscape){
+    .wrapInput {
+        height: 90vh;
+        /* width: 55%; */
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation:landscape){
+    .wrapInput {
+        height: 90vh;
+        /* width: 60%; */
+    }
+}
+
+/* @media only screen and (max-width:650px){
+  .wrapInput{
+      width: 63%;
+      }
+}
+
+@media only screen and (max-width:600px){
+  .wrapInput{
+      width: 70%;
+      }
+}
+
+
+@media only screen and (max-width:550px){
+  .wrapInput{
+      width: 75%;
+      }
+}
+
+@media only screen and (max-width:510px){
+  .wrapInput{
+      width: 80%;
+      
+      }
+} */
+
+@media only screen and (max-height:570px) and (max-width:500px){
+    .wrapInput{
+      height: 60vh;
+    }
+}
+
+@media only screen and (max-height:450px) and (orientation:landscape){
+    .profileDetails{
+        padding: 0.5em;
+        margin-top: 5px;
+    }
+
+    .adminSignIn {
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width:500px) and (orientation:portrait){
+    .welcomeMsg{
+        font-size: 15px;
+    }
+    
+    .names{
+       
+        font-size: 13px;
+        
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+
+    .topright a{
+        font-size: 15px;
+    }
+
+    .profileMgt{
+        
+        padding: 1em 4em;
+    }
+
+    .deleteAcct{
+      
+        padding: 1em 4em;
+    }
+   
+}
+
+
+@media only screen and (max-width:400px) and (max-height:900px){
+    .wrapInput{
+        /* width: 98%; */
+        height:50vh;
+        
+        }
+       
+        input{
+            margin: 1em;
+        }
+        
+        input[type = 'submit']{
+            padding: 0.5em 8em;
+        }
+        /*input[type = 'submit'], input[type = 'button'] {
+          margin-left: 35px;
+          
+      }*/
+        input[placeholder="Enter Registered Email"]{
+            margin-left: 5px;
+        }
+        
+        input[placeholder="Enter Email address."]{
+            margin-left: 20px;
+        }
+        
+        input[placeholder="Re-enter Password"]{
+            margin-left: 20px;
+        }
+  
+        input[placeholder="Enter Password."]{
+            margin-left: 20px;
+        }
+  
+        input[placeholder="Enter Password"]{
+            margin-left: 20px;
+        }
+  
+        label{
+            color: black;
+            
+        }
+  
+        label[for="signIn_password"]{
+            display: inline-block;
+            width:50px;
+            text-align: right;
+        }
+        
+        label[for="password"]{
+        display: inline-block;
+        width:50px;
+        text-align: right;
+        }
+        
+        label[for="email"]{
+        display: inline-block;
+        width:50px;
+        text-align: right;
+        }    
+  
+        label[for="password_again"]{
+            display: inline-block;
+            width:50px;
+            text-align: right;
+            } 
+  
+            .profileDetails {
+              width: 92%;
+          }
+  
+          .adminSignIn input[type = "text"], .adminSignIn input[type = "password"], .adminSignIn input[type = "email"]{
+              width:60%;
+              margin-left: 20px;
+          }
+      
+          .adminSignIn{
+            width: 30%;
+          }
+          .adminSignIn label[for="signIn_password"]{
+              width:70px;
+          }
+          .wrapperAdmin {
+              min-height: 66.2vh;
+          }
+/*           input[name="username"], input[type = "password"], input[type = "email"] {
+           
+              width: 65%; 
+           
+        } */
+
+        p.posts, em {
+            font-size: 16px;
+            
+        }
+
+        .topleftProfile {
+            margin-top: -60px;
+        }
+
+        .settings{
+            margin-bottom: 30px;
+        }
+  }
+
+@media only screen and (max-width:450px) and (max-height:850px){
+    .wrapInput{
+        /* width: 96%; */
+        height:50vh;
+        
+        }
+      
+      .adminSignIn{
+        margin-top: 0px;
+      }
+        .profileDetails label{
+            margin-left: 18px;
+        }      
+        
+        .profileDetails label{
+          font-size: 16px;
+        }
+        
+        .profileDetails input[name = "surname"]{
+          margin-left: 28px;
+        }
+        
+        .profileDetails input[type = "text"]{
+          padding: 5px;
+          background-color: transparent;
+          border: 1px solid rgb(9, 78, 9);
+        }
+        
+        .profileDetails input[type = "submit"]{
+          padding: 5px;
+          width: 250px;
+          height: 25px;
+          margin-left: 50px;
+          border: 2px solid green;
+          font-size: 14px;
+          transition: all 0.5s ease-in-out;
+        }
+        
+        .profileDetails input[type = "submit"]:hover{
+          width: 260px;
+          height: 30px;
+          border: 2px solid black;
+          color: white;
+          background-color: green;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .profileDetails{
+            padding: 0em;
+        }
+          
+        .profile p {
+            font-size: 14px;
+            font-weight: bold;
+            color: red;
+        }
+        .wrapperAdmin {
+            min-height: 66.2vh;
+        }
+
+        
+}
+
+@media only screen and (max-width:450px) and (max-height:800px){
+    .wrapInput{
+        /* width: 96%; */
+        height:50vh;
+        }
+    .adminSignIn{
+      margin-top: 0px;
+    }
+        .profileDetails label{
+          margin-left: 18px;
+      }      
+      
+      .profileDetails label{
+        font-size: 16px;
+      }
+      
+      .profileDetails input[name = "surname"]{
+        margin-left: 28px;
+      }
+      
+      .profileDetails input[type = "text"]{
+        padding: 5px;
+        background-color: transparent;
+        border: 1px solid rgb(9, 78, 9);
+      }
+      
+      .profileDetails input[type = "submit"]{
+        padding: 5px;
+        width: 250px;
+        height: 25px;
+        margin-left: 50px;
+        border: 2px solid green;
+        font-size: 14px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .profileDetails input[type = "submit"]:hover{
+        width: 260px;
+        height: 30px;
+        border: 2px solid black;
+        color: white;
+        background-color: green;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .profileDetails{
+          padding: 0em;
+      }
+        
+      .profile p {
+          font-size: 14px;
+          font-weight: bold;
+          color: red;
+      }
+    
+  }
+
+@media only screen and (max-height:650px) and (max-width:380px){
+  .wrapInput{
+      /* width: 100%; */
+      height:60vh;
+      
+      }
+
+      .adminSignIn{
+          width:97%;
+          margin-top: 0px;
+      }
+
+    /*  .adminSignIn input[placeholder="Enter Registered Email"] {
+        margin-left: 22px;
+    }
+*/
+     /* input[type = 'submit'], input[type = 'button'] {
+        background: transparent;
+        margin-left: 28px;
+    }
+    */
+      .profileDetails{
+          width:85%;
+      
+      }
+
+
+.profileDetails label{
+    margin-left: 22px;
+}      
+
+.profileDetails label{
+  font-size: 14px;
+}
+
+.profileDetails input[name = "surname"]{
+  margin-left: 25px;
+}
+
+.profileDetails input[type = "text"]{
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(9, 78, 9);
+}
+
+.profileDetails input[type = "submit"]{
+  padding: 5px;
+  width: 250px;
+  height: 25px;
+  margin-left: 30px;
+  border: 2px solid green;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+
+.profileDetails input[type = "submit"]:hover{
+  width: 260px;
+  height: 30px;
+  border: 2px solid black;
+  color: white;
+  background-color: green;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+  
+.profile p {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+  }
+
+@media only screen and (max-width:650px) and (orientation:landscape){
+
+ .wrapInput {
+        height: 90vh;
+    }
+.adminSignIn{
+    margin-top: 0px;
+}
+.profile{
+
+    height: 100vh;   
+}
+
+.profileDetails{
+    padding: 0em;
+    margin-top: 5px;
+}
+  }
+
+  @media only screen and (orientation: portrait){
+    .myPost form{
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (orientation: landscape){
+  .wrapInput {
+      height: 100vh;
+  } 
+  .profile {
+    height: 120vh;
+}
+}
+@media only screen and (max-height:600px) and (max-width:350px){
+  .wrapInput{
+      /* width: 98%; */
+      height:60vh;
+      
+      }
+
+      input{
+          margin: 1em;
+      }
+      
+      input[type = 'submit']{
+          padding: 0.5em 7em;
+      }
+      
+      input[placeholder="Enter Registered Email"]{
+          margin-left: 32px;
+      }
+      
+      input[placeholder="Enter Email address."]{
+          margin-left: 20px;
+      }
+      
+      input[placeholder="Re-enter Password"]{
+          margin-left: 20px;
+      }
+
+      input[placeholder="Enter Password."]{
+          margin-left: 20px;
+      }
+
+      input[placeholder="Enter Password"]{
+          margin-left: 32px;
+      }
+
+      label{
+          color: black;
+          
+      }
+
+      .adminSignIn label[for="signIn_password"],.adminSignIn label[for="signIn_username"]{
+          display: inline-block;
+          width:25px;
+          text-align: left;
+          margin-left: 0px;
+          margin-right: 9px;
+      }
+      
+      label[for="password"]{
+      display: inline-block;
+      width:50px;
+      text-align: right;
+      }
+      
+      label[for="email"]{
+      display: inline-block;
+      width:50px;
+      text-align: right;
+      }    
+
+      label[for="password_again"]{
+          display: inline-block;
+          width:50px;
+          text-align: right;
+          } 
+
+          .profile{
+
+            height: 80vh;   
+        }
+        
+        .profileDetails{
+            padding: 0em;
+            margin-top: 2px;
+            width: 97%;
+        }
+
+        .profileDetails input[name = "firstName"] {
+            margin-left: 25px;
+        }
+        .adminSignIn input[type = "text"], .adminSignIn input[type = "password"]{
+            width:60%;
+         
+        }
+
+        .adminSignIn{
+            width:97%;
+        }
+
+        }
+
+        .wrapInput, .wrapperAdmin, .wrapper, .wrap, .wrap a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            height: auto;
+        }
+       
+        .wrapper{
+            padding-top:25px
+        }
+
+        @media only screen and (max-width:500px){
+         .wrap a input[type = "button"]{
+            width:60%;
+            padding-left: 15px;
+            padding-right: 90px;
+
+        } 
+        .wrap a{
+            text-decoration: none;
+        }
+        .myPost form{
+            padding-left: 0em;
+            padding-right: 0em;
+            width: 80%;
+        }
+            
+        
+
+        }
+
+        @media only screen and (max-width:340px){
+            .adminTasks{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            input[name="username"], input[type = "password"], input[type = "email"] {
+                width: 55%;
+            }
+
+            input[placeholder="Enter Registered Email"] {
+                margin-left: 5px;
+            }
+
+            input[placeholder="Enter Password"] {
+                margin-left: 5px;
+            }
+
+            label[for="signIn_password"] {
+                
+                width: 65px;
+             
+            }
+
+            p.posts, em {
+                font-size: 14px;
+            }
+
+            .welcomeMsg {
+                font-size: 12px;
+            }
+
+            .names {
+                font-size: 11px;
+            }
+
+            .topright a {
+                font-size: 12px;
+            }
+
+            .footer {
+                font-size: 12px; 
+            }
+
+          
+.adminSignIn input[type = "text"], .adminSignIn input[type = "password"], .adminSignIn input[type = "email"] {
+    width: 60%;
+    margin-left: 40px;
+}
+}        
+        @media only screen and (max-height:450px) and (orientation:landscape){
+            .header, .footer{
+                height: 20vh;
+            }
+        }
+        
+
+.comment{
+    width:100%;
+    height: 30vh;
+    
+}
+
+.comment textarea{
+    width:60%;
+    height:50%;
+    overflow-y: scroll; 
+}  
+
+.commentWrapper{
+    padding: 5px 40px;
+    
+}
+
+.commentWrapper h2{
+    text-align: start;
+}
+
+.commentWrapper a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.commentName{
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(4, 4, 94);
+}
+
+.person{
+    border: 1px solid grey;
+    padding:0em 0.2em;
+    width: 25%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(190, 184, 184);
+}
+
+.person img{
+    border-radius: 50%;
+}
+
+.commentWrapper button{
+    padding:0.8em;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    color:rgb(62, 62, 196);
+    transition: all 0.6s ease-in-out;
+    background-color: rgb(212, 204, 204);
+    font-weight: bold;
+}
+
+.commentWrapper button:hover{
+    padding:0.8em;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(62, 62, 196);
+}
+.commentContainer{
+    background-color: rgb(228, 220, 220);
+    border: 0.4px solid grey;
+    margin: 20px 40px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.commentPosted{
+    padding: 5px 10px;
+    
+}
+
+.thumbsUp,.thumbsDown,.likeOrUnlike{
+    padding:5px 10px 5px 0px
+}
+
+.likeWrapper,.likeWrapper i{
+    color: green;
+}
+
+.unLikeWrapper,.unLikeWrapper i{
+    color: red;
+}
+
+.likeWrapper button,.unLikeWrapper button{
+    border: none;
+    background-color: unset;
+    padding: 0px;
+    outline: none;
+}
+
+.wrap_lk_unlk{
+    margin-bottom: 5px;
+}
+
+
+span.posted{
+    padding: 5px;
+    color: rgb(8, 8, 172);
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.postedOn{
+    font-weight: bold;
+}
+ 
+.capitalize {
+    text-transform: capitalize;
+  }
+
+  @media only screen and (max-width:1140px){
+      .person{
+          width: 35%;
+      }
+  }
+
+  @media only screen and (max-width:850px){
+      .person{
+          width:45%;
+      }
+  }
+
+  @media only screen and (max-width:685px){
+      .person{
+          width:55%;
+      }
+  }
+
+  @media only screen and (max-width:545px){
+    .person{
+        width:65%;
+    }
+
+    .comment textarea{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .person{
+        width:85%;
+    }
+
+    .comment textarea{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .person{
+        width:95%;
+        
+    }
+
+    .comment textarea{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:340px){
+    .person{
+        width:97%;
+        
+        
+    }
+
+    .comment textarea{
+        width: 97%;
+    }
+    .commentContainer{
+        margin: 20px;
+    }
+
+    .commentWrapper{
+        padding: 5px 20px;
+    }
+    .commentPosted{
+        padding: 5px;
+    }
+    input[type = 'submit'], input[type = 'button'] {
+        margin-left: 23px;
+    }
+}
+
+.adminForm input[name="username"], .adminForm input[type = "password"],.adminForm input[type = "email"] {
+    
+    width: 60%;
+   
+}
+
+@media only screen and (max-width:400px){
+    .adminForm input[name="username"], .adminForm input[type = "password"],.adminForm input[type = "email"] {
+    
+        width: 50%;
+       
+    }
+}
+
+@media only screen and (max-width:300px){
+    .wrapInput{
+        width:96%;
+    }
+    .center label{
+        margin-left: 25px;
+    }
+    label[for="signIn_username"]{
+        margin-left: 17px;
+    }
+
+    input[type="submit"]{
+        margin-left: 25px;
+        width:83%;
+    }
+}
+
+.backdrop{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 10; 
+    background-color: rgb(0, 0, 0,0.8);
+ 
+ }
+ 
+ .modal{
+     display: flex;
+     flex-direction: column;
+     position:absolute;
+     justify-content: center;
+     align-items: center;
+     padding:10px;
+     top: 0;
+     bottom: 0;
+     right:0;
+     left: 0;
+     background-color: white;
+     border:0px solid black;
+     width:50%;
+     height: fit-content;
+     max-height: 60%;
+     margin:auto;
+     z-index: 50;
+ }
+
+ @media only screen and (orientation:portrait){
+     .modal{
+        width: 90%;
+     }
+ }
+
+ @media only screen and (orientation:landscape) and (max-width:1000px){
+    p.posts,em{
+        line-height: 4vw;
+
+       
+    }
+ }
+
+ #deleteMsg{
+     padding:10px 5px;
+     font-family: 'Roboto', sans-serif;
+ }
+ #declineDel,#confirmDel{
+    padding: 5px 10px;
+    margin:5px 10px;
+    color: white;
+    border:none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ #confirmDel{
+    background-color:red;
+ }
+ #declineDel{
+    background-color: green;
+ }
+

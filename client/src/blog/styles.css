@@ -1,0 +1,160 @@
+
+    #root{
+        height:auto;
+    }
+    
+    section{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height:auto;
+        margin:auto 50px;
+    }
+    
+    body{
+        background-color: rgb(3, 3, 94);
+        margin: 0px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        height: 45.66vh;
+        width: 21.96vw;
+    }
+
+    .containerDiv{
+        display: grid;
+        text-align: center;
+        margin:auto;
+        border-radius: 10%;
+        padding-top: 15.22vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "section section";
+    }
+    
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:39.5vw;
+        height:auto;
+    }
+    
+    h1+button{
+        border-radius: 3%;
+    }
+    
+    .access,.access1{
+        background: transparent;
+        color:white;
+        font-weight: bold;
+        border: 1px solid grey;
+        margin:25px auto;
+        font-size: 18px;
+    }
+    
+    .access:hover{
+        background: rgb(202, 202, 202);
+        color:rgb(67, 67, 238);
+    }
+    
+    .access1:hover{
+        background: rgb(202, 202, 202);
+        color:blueviolet;
+    }
+    
+    button{
+            padding: 0.5rem;
+        }
+
+@media only screen and (orientation:portrait){
+
+    .containerDiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "section";
+        padding-top: 7.61vh;
+    }
+
+    .wrapper{
+        width:auto;
+       
+    }
+
+    section{
+        margin-bottom: 7.61vh;
+    }
+    
+    img{
+        height: auto;
+        width: auto;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+#section1{
+    color: white;
+background-color: rgb(67, 67, 238);
+}
+#section2{
+    color: white;
+    background-color: blueviolet;
+}
+ 
+.blogAccess{
+    padding-top:6rem;
+    text-align: center;
+    background: linear-gradient(-135deg,rgb(235, 226, 226),rgb(138, 138, 248));
+    height: 100vh;
+}
+
+.blogAccess input{
+    padding:10px 20px;
+    margin-right: 10px;
+}
+
+.blogAccess input:hover{
+    border:2px solid green;
+    font-weight: bold;
+}
+
+input[value = 'No']:hover{
+    border:2px solid red;
+}
+
+.blogAccess h2{
+    margin-top: 0px;
+}
+
+/*
+particles style
+*/
+.particles{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.wrapper_container{
+    max-width: 100vw;
+}
+
+#wrapperNav{
+    display: flex;
+}
+
+@media only screen and (max-height:600px) and (orientation:landscape){
+   .wrapper_container{
+    margin-bottom: 15.22vh;
+}
+   }
