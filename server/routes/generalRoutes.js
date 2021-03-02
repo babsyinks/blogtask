@@ -1,11 +1,8 @@
 const path = require('path')
 const{signOut,adminSignIn} = require('../links')
 const auth = require('../middlewares/adminAuth')
+const auth1 = require('../middlewares/userAuth')
 const{User,BlogPost,passport,router} = require('../passaportLocal/passportLocal')
-//const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
-/* router.get('/',(req,res)=>{
-  res.sendFile(__dirname,path.join(__dirname,'','',`${publicDir}`,'index.html'))
-})  */
 
 router.get('/signIn',(req,res)=>{
 res.render('signIn',{validation:'',validateSignIn:'',
@@ -207,14 +204,16 @@ router.get('/adminRedirect/:id',auth,(req,res)=>{
             res.render('admin',{adminValidator:'',headerData:signOut.headerData,url:signOut.url,loggedIn:'loggedIn',id:req.user._id,profileLoaded,surname,firstName}) 
        
     })
-}
-
-)
+})
 
 router.get('/admin/registerAdmin',auth,(req,res)=>{
     const profileLoaded = req.user.getImageBufferLength()
     const{surname,firstName} = req.user.profile
     res.render('registerAdmin',{adminValidator:'',headerData:signOut.headerData,url:signOut.url,loggedIn:'loggedIn',id:req.user._id,profileLoaded,surname,firstName})
+})
+
+router.get('/privacypolicy',auth1,(req,res)=>{
+    res.render('privacypolicy',{headerData:signOut.headerData,url:signOut.url,loggedIn:'loggedIn',id:req.user._id})
 })
 
 module.exports = router 
