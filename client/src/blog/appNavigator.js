@@ -26,7 +26,7 @@ const paricles_options = {"particles":
 const AppNavigator = ()=>{ 
     return (
         <div className = 'wrapper_container'>
-            <Particles params = {paricles_options} className = 'particles'/>
+            <Particles params = {paricles_options} className = 'particles' />
             <div id = "wrapperNav">
             <div className = "containerDiv">
                 
