@@ -1655,7 +1655,7 @@ span.posted{
         width: 90%;
      }
  }
-
+ 
  @media only screen and (orientation:landscape) and (max-width:1000px){
     p.posts,em{
         line-height: 4vw;

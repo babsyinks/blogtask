@@ -36,15 +36,11 @@ const AppNavigator = ()=>{
                  
                  </Tilt>  
                 
-                
                  <Tilt option = {{max:5}} >
                   
                    <Link to = "todo"><LinkTodo/></Link>  
                 
                  </Tilt>
-                
-              
-                
             </div>
             </div>
         </div>
