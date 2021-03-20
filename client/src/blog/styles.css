@@ -74,44 +74,6 @@
             padding: 0.58vw;
         }
 
-@media only screen and (orientation:portrait){
-
-    .containerDiv{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "section";
-        padding-top: 7.61vh;
-    }
-
-    .wrapper{
-        width:39.5vh;
-        height:auto;
-    }
-
-    section{
-        margin-bottom: 7.61vh;
-    }
-    
-    img {
-        height: 45.66vw;
-        width: 21.96vh;
-    }
-
-    button{
-        padding: 0.58vh;
-    }
-
-    .access,.access1{
-        margin: 1.83vh auto;
-        font-size: 1.31vh;
-    }
-
-    .wrapper h1{
-        font-size: 1.756vh;
-    }
-
-}
-
 h1{
     text-align: center;
 }
@@ -148,6 +110,7 @@ input[value = 'No']:hover{
 
 .blogAccess h2{
     margin-top: 0px;
+    font-size: 1.757vw;
 }
 
 /*
@@ -177,6 +140,50 @@ particles style
     display: flex;
     width: 100%;
     height: 100%;
+}
+
+
+@media only screen and (orientation:portrait){
+
+    .containerDiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "section";
+        padding-top: 7.61vh;
+    }
+
+    .wrapper{
+        width:39.5vh;
+        height:auto;
+    }
+
+    section{
+        margin-bottom: 7.61vh;
+    }
+    
+    img {
+        height: 45.66vw;
+        width: 21.96vh;
+    }
+
+    button{
+        padding: 0.58vh;
+    }
+
+    .access,.access1{
+        margin: 1.83vh auto;
+        font-size: 1.31vh;
+    }
+
+    .wrapper h1{
+        font-size: 1.756vh;
+    }
+
+    .blogAccess h2{
+        margin-top: 0px;
+        font-size: 1.757vh;
+    }
+
 }
 
 @media only screen and (max-height:600px) and (orientation:landscape){

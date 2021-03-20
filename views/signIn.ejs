@@ -64,13 +64,14 @@ This is an implementation using facebook sdk incase this method is preferred to 
 <div class="wrapper">
 <div class="wrapInput signIn">
   <h1>Log In</h1>
-
 <div class = 'center'>
 <form action="/signIn" method="POST">
-<label for = "signIn_username">UserName:</label> <input type="text" name="username" placeholder="Enter Registered Email"/>
-<br>
-<label for = "signIn_password">Password:</label> <input type="password" name="password" placeholder="Enter Password"/>
-<br>
+<div class="lab_inp">
+  <label for = "signIn_username">UserName:</label> <input type="text" name="username" placeholder="Enter Registered Email"/>
+</div>
+<div class="lab_inp">
+  <label for = "signIn_password">Password:</label> <input type="password" name="password" placeholder="Enter Password"/>
+</div>
 <input type="submit" value = "Log In"/>
 </form>
 </div>
@@ -94,12 +95,15 @@ This is an implementation using facebook sdk incase this method is preferred to 
 
 <div class="center register_group">
 <form action="/register" method="POST">
-<label for="email">Email:</label><input type="email" name="username" placeholder="Enter Email address."/>
-<br>
-<label for="password">Password:</label><input type="password" name="password" placeholder="Enter Password."/>
-<br>
-<label for="password_again">Password Again:</label><input type="password" name="password_again" placeholder="Re-enter Password"/>
-<br>
+  <div class="lab_inp">
+    <label for="email">Email:</label><input type="email" name="username" placeholder="Enter Email address."/>
+  </div>
+  <div class="lab_inp">
+    <label for="password">Password:</label><input type="password" name="password" placeholder="Enter Password."/>
+  </div>
+  <div class="lab_inp">
+    <label for="password_again">Password Again:</label><input type="password" name="password_again" placeholder="Re-enter Password"/>
+  </div>
 <input type="submit" value="Register"/>
 </form>
 </div>

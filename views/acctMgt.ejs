@@ -13,6 +13,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/handleDeleteAcct.js"></script>
 </head>
+<body>
+    <div class="header">
+       <%if(loggedIn === "loggedIn"){%>
+   
+         <% if(profileLoaded === "loaded"){%>
+         
+       <div class="topright">
+            <span class="welcomeMsg">Welcome</span><span class="names capitalize"><%= surname %> <%= firstName %></span>
+            <span class="profilePic"><img src="/profile/<%=id%>/profilePic"></span>
+         
+        
+           <a href=<%= url %> ><%= headerData %></a>
+           <a href="/acctMgtEdit" class="settings"><i class="fa fa-cog"></i></a>
+         </div>
+   
+         <div class="topleft topleftProfile">
+           <a href="/"><i class="fa fa-home"></i></a>
+         </div>
+         <%}else{%>
+           <div class="topright">
+         
+             <span class="profilePic"></span>
+          
+         
+            <a href=<%= url %> ><%= headerData %></a>
+            <a href="/acctMgtNew" class="settings"><i class="fa fa-cog"></i></a>
+          </div>
+    
+          <div class="topleft">
+            <a href="/" ><i class="fa fa-home"></i></a>
+          </div>
+           <%}%>
+      <%}else{%>
+      
+       <div class="topright">
+   
+         <a class="topnav" href=<%= url %> ><%= headerData %></a>
+       
+       </div>
+       <div class="topleft">
+         <a href="/"><i class="fa fa-home"></i></a>
+       </div>  
+       <%}%>
+    </div>   
 <div class="wrapAcct">
 <h1>What will you like to do</h1> 
 <div class="adminTasks">

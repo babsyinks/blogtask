@@ -1,5 +1,6 @@
 body{
     margin:0px;
+    height: 100vh;
 }
 
 .wrapper{
@@ -8,7 +9,7 @@ body{
     background-image: url('/images/user.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +127,7 @@ margin-top: 22px;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
+    height: 70%;
 }
 
 .postChange form{
@@ -160,10 +161,18 @@ margin-top: 22px;
 }
 
 .center form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 }
-
+.lab_inp{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .validation{
     color:red;
     font-size: 18px;
@@ -171,6 +180,11 @@ margin-top: 22px;
     margin-bottom: 0px;
     padding: 0.2em;
 }
+
+.wrap h1{
+    font-size: 2.34vw;
+}
+
 h1,h2{
     text-align: center;
     font-family: 'Playfair Display SC';
@@ -199,7 +213,7 @@ h2.heading{
 
 .header{
     width:100%;
-    height: 15vh;
+    height: 15%;
     background-color:black ;
     opacity:0.7;
     font-family: sans-serif;
@@ -210,7 +224,7 @@ h2.heading{
     justify-content: center;
     align-items: center;
     width:100%;
-    height: 15vh;
+    height: 15%;
     background-color:black ;
     color: white;
     font-size: 18px;
@@ -222,7 +236,7 @@ h2.heading{
 width: auto;
 /*margin: 0px auto 0px;*/
 border-radius:4%;
-height:50vh;
+/* height:50vh; */
 }
 
 .blogWrapper{
@@ -248,7 +262,7 @@ input[type = "submit"].adminActionButtons{
 display: flex;
 justify-content: center;
 padding:1.2rem;
-
+font-size:  1.171vw;
 }
 /*
 p.content{
@@ -326,7 +340,7 @@ input[value="Register A New Admin"]:hover{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        min-height: 100vh;
+        height: 70%;
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -390,11 +404,11 @@ input[value = "Register"]{
     padding: 1em 10em;
 }
 
-label[for = "signIn_password"]{
+/* label[for = "signIn_password"]{
     margin-left: 7px;
 }
-
-input[placeholder="Enter Registered Email"]{
+ */
+/* input[placeholder="Enter Registered Email"]{
     margin-left: 6px;   
 }
 
@@ -408,29 +422,28 @@ input[placeholder="Enter Email address."]{
 
 input[placeholder="Enter Password."]{
     margin-left: 14px;
-}
+} */
 label{
     color: black;
-    
+    margin: 1em;
 }
 
 label[for="password"]{
 display: inline-block;
-width:70px;
+/* width:70px; */
 text-align: right;
 }
 
 label[for="email"]{
 display: inline-block;
-width:70px;
+/* width:70px; */
 text-align: right;
 }
 
 label[for="password_again"]{
     display: inline-block;
-    width:70px;
-    
-    text-align: right;
+    /* width:70px; */
+    text-align: left;
     }
 
 input[value = "Log In"]{
@@ -460,6 +473,11 @@ input[value = "Register"]:hover{
 
 button,input[type = 'button'], input[type = 'submit']{
     cursor: pointer;
+    
+}
+
+.adminTasks button{
+    text-align: center;
 }
 
 .register h1{
@@ -548,7 +566,7 @@ button,input[type = 'button'], input[type = 'submit']{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    height: 70%;
     background: url("/images/profile1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -664,26 +682,26 @@ button,input[type = 'button'], input[type = 'submit']{
     }
 }
 
-@media only screen and (max-width:531px){
+/* @media only screen and (max-width:531px){
   
     
 }
 
 @media only screen and (min-width:1380px){
-/*     .wrapInput{
+    .wrapInput{
         width:28%;
-    } */
+    }
     .wrapperAdmin {
         min-height: 67.2vh;
     }
     .adminSignIn{
         min-height: 40vh;
     }
-}
+} */
 
-@media only screen and (max-width:1379px){
+/* @media only screen and (max-width:1379px){
   .wrapInput{
-     /*  width:30%; */
+      width:30%;
       height: 55vh;
   }
   .wrapperAdmin {
@@ -692,34 +710,34 @@ button,input[type = 'button'], input[type = 'submit']{
 .adminSignIn{
     min-height: 40vh;
 }
-}
+} */
 
-@media only screen and (max-width:1379px) and (max-height:700px){
+/* @media only screen and (max-width:1379px) and (max-height:700px){
   .adminSignIn{
       min-height: 45vh;
   }
-  }
+  } */
 
-@media only screen and (max-width:1290px){
-/*   .wrapInput{
+/* @media only screen and (max-width:1290px){
+  .wrapInput{
       width: 32%;
       }
- */
+
    .adminSignIn{
     min-height:10vh;
    }
 }
-
-@media only screen and (max-width:1100px){
-/*   .wrapInput{
+ */
+/* @media only screen and (max-width:1100px){
+  .wrapInput{
       width: 39%;
-      } */
+      }
       .wrapperAdmin {
         min-height: 68.2vh
     }
-}
+} */
 
-@media only screen and (min-height:1300px){
+/* @media only screen and (min-height:1300px){
   .wrapInput{
       height:30vh;
   }
@@ -729,9 +747,9 @@ button,input[type = 'button'], input[type = 'submit']{
     .wrapInput{
       height: 40vh;
     }
-  } 
+  }  */
   
-@media only screen and (max-width:1100px) and (orientation:landscape){
+/* @media only screen and (max-width:1100px) and (orientation:landscape){
     .wrapInput{
       height: 60vh;
     }
@@ -742,15 +760,15 @@ button,input[type = 'button'], input[type = 'submit']{
     .wrapperAdmin {
         min-height: 66.2vh;
     }
-  }
+  } */
 
-@media only screen and (max-width:1100px) and (orientation:landscape) and (max-height:610px){
+/* @media only screen and (max-width:1100px) and (orientation:landscape) and (max-height:610px){
     
     .adminSignIn{
         width: 40%;
         
     }
-  }
+  } */
 
 /* @media only screen and (max-width:980px){
   .wrapInput{
@@ -764,41 +782,41 @@ button,input[type = 'button'], input[type = 'submit']{
       }
 } */
 
-@media only screen and (max-width:850px) and (orientation:landscape){
+/* @media only screen and (max-width:850px) and (orientation:landscape){
     .wrapInput{
-        /* width: 49%; */
+        width: 49%;
         height:90vh;
         
         }
 
   
-}
+} */
 
 @media only screen and (max-width:770px){
 /*   .wrapInput{
       width: 53%;
       } */
 
-      .wrapperAdmin {
+/*       .wrapperAdmin {
         min-height: 68.2vh;
-    }
+    } */
 
 }
 
 @media only screen and (max-width: 770px) and (orientation:landscape){
     .wrapInput {
-        height: 90vh;
-        /* width: 55%; */
+/*         height: 90vh;
+        width: 55%; */
         margin-top: 2px;
     }
 }
 
-@media only screen and (max-width: 700px) and (orientation:landscape){
+/* @media only screen and (max-width: 700px) and (orientation:landscape){
     .wrapInput {
         height: 90vh;
-        /* width: 60%; */
+        width: 60%;
     }
-}
+} */
 
 /* @media only screen and (max-width:650px){
   .wrapInput{
@@ -825,12 +843,12 @@ button,input[type = 'button'], input[type = 'submit']{
       
       }
 } */
-
+/* 
 @media only screen and (max-height:570px) and (max-width:500px){
     .wrapInput{
       height: 60vh;
     }
-}
+} */
 
 @media only screen and (max-height:450px) and (orientation:landscape){
     .profileDetails{
@@ -864,23 +882,23 @@ button,input[type = 'button'], input[type = 'submit']{
 
     .profileMgt{
         
-        padding: 1em 4em;
+        padding: 1em 3em;
     }
 
     .deleteAcct{
       
-        padding: 1em 4em;
+        padding: 1em 3em;
     }
    
 }
 
 
 @media only screen and (max-width:400px) and (max-height:900px){
-    .wrapInput{
-        /* width: 98%; */
+/*     .wrapInput{
+        width: 98%;
         height:50vh;
         
-        }
+        } */
        
         input{
             margin: 1em;
@@ -893,7 +911,7 @@ button,input[type = 'button'], input[type = 'submit']{
           margin-left: 35px;
           
       }*/
-        input[placeholder="Enter Registered Email"]{
+/*         input[placeholder="Enter Registered Email"]{
             margin-left: 5px;
         }
         
@@ -911,7 +929,7 @@ button,input[type = 'button'], input[type = 'submit']{
   
         input[placeholder="Enter Password"]{
             margin-left: 20px;
-        }
+        } */
   
         label{
             color: black;
@@ -920,46 +938,46 @@ button,input[type = 'button'], input[type = 'submit']{
   
         label[for="signIn_password"]{
             display: inline-block;
-            width:50px;
+            /* width:50px; */
             text-align: right;
         }
         
         label[for="password"]{
         display: inline-block;
-        width:50px;
+        /* width:50px; */
         text-align: right;
         }
         
         label[for="email"]{
         display: inline-block;
-        width:50px;
+       /*  width:50px; */
         text-align: right;
         }    
   
         label[for="password_again"]{
             display: inline-block;
-            width:50px;
-            text-align: right;
+           /*  width:50px; */
+            text-align: left;
             } 
   
             .profileDetails {
               width: 92%;
           }
   
-          .adminSignIn input[type = "text"], .adminSignIn input[type = "password"], .adminSignIn input[type = "email"]{
-              width:60%;
-              margin-left: 20px;
-          }
+/*           .adminSignIn input[type = "text"], .adminSignIn input[type = "password"], .adminSignIn input[type = "email"]{
+               width:60%; 
+               margin-left: 20px;
+          } */
       
-          .adminSignIn{
+/*           .adminSignIn{
             width: 30%;
-          }
-          .adminSignIn label[for="signIn_password"]{
+          } */
+/*           .adminSignIn label[for="signIn_password"]{
               width:70px;
-          }
-          .wrapperAdmin {
+          } */
+      /*     .wrapperAdmin {
               min-height: 66.2vh;
-          }
+          } */
 /*           input[name="username"], input[type = "password"], input[type = "email"] {
            
               width: 65%; 
@@ -981,11 +999,11 @@ button,input[type = 'button'], input[type = 'submit']{
   }
 
 @media only screen and (max-width:450px) and (max-height:850px){
-    .wrapInput{
-        /* width: 96%; */
+/*     .wrapInput{
+        width: 96%;
         height:50vh;
         
-        }
+        } */
       
       .adminSignIn{
         margin-top: 0px;
@@ -1036,18 +1054,18 @@ button,input[type = 'button'], input[type = 'submit']{
             font-weight: bold;
             color: red;
         }
-        .wrapperAdmin {
+/*         .wrapperAdmin {
             min-height: 66.2vh;
-        }
+        } */
 
         
 }
 
 @media only screen and (max-width:450px) and (max-height:800px){
-    .wrapInput{
-        /* width: 96%; */
+/*     .wrapInput{
+        width: 96%;
         height:50vh;
-        }
+        } */
     .adminSignIn{
       margin-top: 0px;
     }
@@ -1101,14 +1119,14 @@ button,input[type = 'button'], input[type = 'submit']{
   }
 
 @media only screen and (max-height:650px) and (max-width:380px){
-  .wrapInput{
-      /* width: 100%; */
+/*   .wrapInput{
+      width: 100%;
       height:60vh;
       
-      }
+      } */
 
       .adminSignIn{
-          width:97%;
+         /*  width:97%; */
           margin-top: 0px;
       }
 
@@ -1121,10 +1139,10 @@ button,input[type = 'button'], input[type = 'submit']{
         margin-left: 28px;
     }
     */
-      .profileDetails{
+/*       .profileDetails{
           width:85%;
       
-      }
+      } */
 
 
 .profileDetails label{
@@ -1175,15 +1193,11 @@ button,input[type = 'button'], input[type = 'submit']{
 
 @media only screen and (max-width:650px) and (orientation:landscape){
 
- .wrapInput {
+/*  .wrapInput {
         height: 90vh;
-    }
+    } */
 .adminSignIn{
     margin-top: 0px;
-}
-.profile{
-
-    height: 100vh;   
 }
 
 .profileDetails{
@@ -1192,38 +1206,30 @@ button,input[type = 'button'], input[type = 'submit']{
 }
   }
 
-  @media only screen and (orientation: portrait){
-    .myPost form{
-        padding-left: 0em;
-        padding-right: 0em;
-        width: 80%;
-    }
-  }
-
-  @media only screen and (max-width: 600px) and (orientation: landscape){
+/*   @media only screen and (max-width: 600px) and (orientation: landscape){
   .wrapInput {
       height: 100vh;
   } 
   .profile {
     height: 120vh;
 }
-}
+} */
 @media only screen and (max-height:600px) and (max-width:350px){
-  .wrapInput{
-      /* width: 98%; */
+/*   .wrapInput{
+      width: 98%;
       height:60vh;
       
-      }
+      } */
 
-      input{
+     /*  input{
           margin: 1em;
-      }
+      } */
       
       input[type = 'submit']{
           padding: 0.5em 7em;
       }
       
-      input[placeholder="Enter Registered Email"]{
+      /* input[placeholder="Enter Registered Email"]{
           margin-left: 32px;
       }
       
@@ -1246,7 +1252,7 @@ button,input[type = 'button'], input[type = 'submit']{
       label{
           color: black;
           
-      }
+      } */
 
       .adminSignIn label[for="signIn_password"],.adminSignIn label[for="signIn_username"]{
           display: inline-block;
@@ -1258,26 +1264,26 @@ button,input[type = 'button'], input[type = 'submit']{
       
       label[for="password"]{
       display: inline-block;
-      width:50px;
+      /* width:50px; */
       text-align: right;
       }
       
       label[for="email"]{
       display: inline-block;
-      width:50px;
+      /* width:50px; */
       text-align: right;
       }    
 
       label[for="password_again"]{
           display: inline-block;
-          width:50px;
-          text-align: right;
+          /* width:50px; */
+          text-align: left;
           } 
-
+/* 
           .profile{
 
             height: 80vh;   
-        }
+        } */
         
         .profileDetails{
             padding: 0em;
@@ -1285,17 +1291,14 @@ button,input[type = 'button'], input[type = 'submit']{
             width: 97%;
         }
 
-        .profileDetails input[name = "firstName"] {
-            margin-left: 25px;
-        }
-        .adminSignIn input[type = "text"], .adminSignIn input[type = "password"]{
+ /*        .adminSignIn input[type = "text"], .adminSignIn input[type = "password"]{
             width:60%;
          
         }
 
         .adminSignIn{
             width:97%;
-        }
+        } */
 
         }
 
@@ -1305,7 +1308,7 @@ button,input[type = 'button'], input[type = 'submit']{
             align-items: center;
             flex-direction: column;
             text-decoration: none;
-            height: auto;
+            /* height:70%; */
         }
        
         .wrapper{
@@ -1314,9 +1317,9 @@ button,input[type = 'button'], input[type = 'submit']{
 
         @media only screen and (max-width:500px){
          .wrap a input[type = "button"]{
-            width:60%;
+            width:70%;
             padding-left: 15px;
-            padding-right: 90px;
+            padding-right: 60px;
 
         } 
         .wrap a{
@@ -1337,7 +1340,7 @@ button,input[type = 'button'], input[type = 'submit']{
                 padding-left: 0px;
                 padding-right: 0px;
             }
-
+/* 
             input[name="username"], input[type = "password"], input[type = "email"] {
                 width: 55%;
             }
@@ -1354,7 +1357,7 @@ button,input[type = 'button'], input[type = 'submit']{
                 
                 width: 65px;
              
-            }
+            } */
 
             p.posts, em {
                 font-size: 14px;
@@ -1382,11 +1385,11 @@ button,input[type = 'button'], input[type = 'submit']{
     margin-left: 40px;
 }
 }        
-        @media only screen and (max-height:450px) and (orientation:landscape){
+/*         @media only screen and (max-height:450px) and (orientation:landscape){
             .header, .footer{
                 height: 20vh;
             }
-        }
+        } */
         
 
 .comment{
@@ -1583,9 +1586,9 @@ span.posted{
     .commentPosted{
         padding: 5px;
     }
-    input[type = 'submit'], input[type = 'button'] {
+/*     input[type = 'submit'], input[type = 'button'] {
         margin-left: 23px;
-    }
+    } */
 }
 
 .adminForm input[name="username"], .adminForm input[type = "password"],.adminForm input[type = "email"] {
@@ -1603,10 +1606,15 @@ span.posted{
 }
 
 @media only screen and (max-width:300px){
-    .wrapInput{
-        width:96%;
+    .wrap a input[type = "button"]{
+        padding-right: 90px;
+
+    } 
+    input[type = "submit"].adminActionButtons {
+        padding: 1em 4em;
     }
-    .center label{
+
+/*     .center label{
         margin-left: 25px;
     }
     label[for="signIn_username"]{
@@ -1616,6 +1624,36 @@ span.posted{
     input[type="submit"]{
         margin-left: 25px;
         width:83%;
+    } */
+    input, label {
+        margin: 1em 0px;
+    }
+    .profileDetails input[name = "surname"] {
+        margin-left: 15px;
+    }
+    .profileDetails input[type = "file"] {
+        margin-left: 18px;
+    }
+
+    .profileDetails input[type = "submit"] {
+        margin-left: 10px;
+    }
+
+    .profileDetails label {
+        margin-left: 3px;
+    }
+
+    .profileDetails {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-height:300px){
+    .center{
+        width: 100%;
+    }
+    input[value = "Log In"] {
+        padding: 1em 7em;
     }
 }
 
@@ -1628,7 +1666,7 @@ span.posted{
     z-index: 10; 
     background-color: rgb(0, 0, 0,0.8);
  
- }
+ } 
  
  .modal{
      display: flex;
@@ -1654,15 +1692,60 @@ span.posted{
      .modal{
         width: 90%;
      }
+     .myPost form{
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 80%;
+    }
+    .wrap h1{
+        font-size: 2.34vh;
+    }
+    .adminTasks{
+        display: flex;
+        justify-content: center;
+        padding:1.2rem;
+        font-size:  1.171vh;
+        }
  }
+
+ .backdrop{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 10; 
+    background-color: rgb(0, 0, 0,0.8);
  
+ }
+
  @media only screen and (orientation:landscape) and (max-width:1000px){
     p.posts,em{
-        line-height: 4vw;
-
-       
+        line-height: 4vw; 
     }
  }
+
+   @media only screen and (orientation:landscape) and (max-height:700px){
+    .wrapperAdmin{
+        height:70%;
+   }
+ } 
+
+ @media only screen and (orientation:landscape) and (max-height:640px){
+    .backdrop{
+        height: 100vw;
+     }
+ }
+
+  @media only screen and (orientation:landscape) and (max-height:600px){
+    body{
+        height: 100vw;
+    }
+ } 
+
+ .wrap{
+    height:70%;
+}
 
  #deleteMsg{
      padding:10px 5px;
@@ -1682,6 +1765,10 @@ span.posted{
  }
  #declineDel{
     background-color: green;
+ }
+
+ .wrapInput{
+     max-width: 98%;
  }
 
 .privacypolicy{
