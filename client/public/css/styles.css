@@ -193,8 +193,7 @@ p,em{
    font-family: "Montserrat"; 
 }
 p.posts,em{
-    line-height: 4vh;
-    font-size: 18px;
+    line-height: 2.5vw;
     padding:5px 40px;  
    
 }
@@ -989,10 +988,10 @@ button,input[type = 'button'], input[type = 'submit']{
            
         } */
 
-        p.posts, em {
+/*         p.posts, em {
             font-size: 16px;
             
-        }
+        } */
 
         .topleftProfile {
             margin-top: -60px;
@@ -1364,9 +1363,9 @@ button,input[type = 'button'], input[type = 'submit']{
              
             } */
 
-            p.posts, em {
+/*             p.posts, em {
                 font-size: 14px;
-            }
+            } */
 
             .welcomeMsg {
                 font-size: 12px;
@@ -1408,7 +1407,7 @@ button,input[type = 'button'], input[type = 'submit']{
     overflow-y: scroll; 
 }  
 
-.commentWrapper{
+.commentWrapper, .heading{
     padding: 5px 40px;
     
 }
@@ -1576,7 +1575,6 @@ span.posted{
         
         
     }
-
     .comment textarea{
         width: 97%;
     }
@@ -1584,9 +1582,6 @@ span.posted{
         margin: 20px;
     }
 
-    .commentWrapper{
-        padding: 5px 20px;
-    }
     .commentPosted{
         padding: 5px;
     }
@@ -1709,10 +1704,13 @@ span.posted{
         justify-content: center;
         padding:1.2rem;
         font-size:  1.171vh;
-        }
-        .dateDetails,.postedOn,.posted{
+    }
+    .dateDetails,.postedOn,.posted{
             font-size: 1.317vh;
-        }
+    }
+       p.posts,em{
+        line-height: 2.5vh;
+    }
  }
 
  @media only screen and (orientation:landscape){
@@ -1731,12 +1729,12 @@ span.posted{
     background-color: rgb(0, 0, 0,0.8);
  
  }
-
+/* 
  @media only screen and (orientation:landscape) and (max-width:1000px){
     p.posts,em{
         line-height: 4vw; 
     }
- }
+ } */
 
    @media only screen and (orientation:landscape) and (max-height:700px){
     .wrapperAdmin{
@@ -1756,6 +1754,16 @@ span.posted{
     }
  } 
 
+ @media only screen and (max-width:1000px){
+    p.posts, em {
+        line-height: 4vw;
+    }
+ }
+@media only screen and (orientation: portrait) and (max-height:1000px){
+p.posts, em {
+    line-height: 4vh;
+}
+ }
  .wrap{
     height:70%;
 }
