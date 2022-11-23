@@ -1,0 +1,42 @@
+[
+    {
+        "id": "0e7ccef0-c983-11e9-9777-d3afeb304e28",
+        "title": "Medical Course",
+        "project": "Learn lower and upper limbs",
+        "displayEdit": false,
+        "date": "03/18/2020",
+        "time": "09:02"
+    },
+    {
+        "id": "0p7xxed0-i555-77u2-0101-q2czik893e55",
+        "title": "Programming Course",
+        "project": "Learn to program expertly",
+        "displayEdit": false,
+        "date": "04/11/2020",
+        "time": "06:12"
+    },
+    {
+        "id": "0r2aasb1-g785-22g0-0852-j9htxr155q30",
+        "title": "Engineering Course",
+        "project": "Learn core engineering principles",
+        "displayEdit": false,
+        "date": "11/08/2020",
+        "time": "08:09"
+    },
+    {
+        "id": "0w6ttqs2-g825-99w1-7733-a3dsza203a33",
+        "title": "Fishing Course",
+        "project": "Learn how to catch fish",
+        "displayEdit": false,
+        "date": "04/28/2020",
+        "time": "10:00"
+    },
+    {
+        "id": "7877e460-c984-11e9-b607-5b7552867c12",
+        "title": "Driving Course",
+        "project": "Learn how to drive",
+        "displayEdit": false,
+        "date": "02/08/2020",
+        "time": "07:50"
+    }
+]
