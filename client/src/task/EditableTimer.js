@@ -31,8 +31,7 @@ export default function EditableTimer(props){
             <div style = {{textAlign:"center"}}>
                 <span><input type = 'button' onClick = {handleEditClick} style = {{margin:'5px'}} value = 'Edit'/></span>
                 <span><input type = 'button' onClick = {handleDelete} style = {{margin:'5px'}} value = 'Delete'/></span>
-            </div>
-            
+            </div>   
         </div>
     )
 }

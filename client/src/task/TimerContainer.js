@@ -18,7 +18,7 @@ export default class TimerContainer extends React.Component{
        this.cancelTimer = this.cancelTimer.bind(this)
     }
     componentDidMount(){
-        fetch('/api/timers').then(res=>
+        fetch('https://blogtask.onrender.com/api/timers').then(res=>
             res.json()
         ).then(resp=>{
             this.setState({timers:resp})   
@@ -32,7 +32,7 @@ export default class TimerContainer extends React.Component{
        
       let newTimer = [...this.state.timers,timer]
 
-      fetch('/api/timers',{
+      fetch('https://blogtask.onrender.com/api/timers',{
           method:'post',
           body:JSON.stringify(timer),
           headers: {
@@ -83,7 +83,7 @@ export default class TimerContainer extends React.Component{
 
             })
 
-            fetch('api/timers/edit',{
+            fetch('https://blogtask.onrender.com/api/timers/edit',{
                 method:'post',
                 body:JSON.stringify(targetTimer),
                 headers:{
@@ -117,14 +117,11 @@ export default class TimerContainer extends React.Component{
 
         })
         this.setState({timers:sortedFinalTimer})
-
-
-
     }
 
     deleteTimer(id){
         const filteredTimer = this.state.timers.filter(timer=>timer.id === id)
-        fetch('/api/timers',{
+        fetch('https://blogtask.onrender.com/api/timers',{
             method:'delete',
             body:JSON.stringify(filteredTimer[0]),
             headers:{
@@ -135,8 +132,6 @@ export default class TimerContainer extends React.Component{
             ).then(resp=>{
                 this.setState({timers:resp}) 
             })
-        
-
     }
 
     cancelTimer(id){
@@ -156,19 +151,10 @@ export default class TimerContainer extends React.Component{
             else{
                 return 1
             }
-
-
         })
         this.setState({timers:sortedFinalTimer})
-
-
-
     }
-
-   
-
     render(){
-
          return (
         <div style = {{backgroundColor:'black',borderRadius:'5px',padding:'5px',color:'white',margintop:'100px'}}>
 
@@ -176,6 +162,5 @@ export default class TimerContainer extends React.Component{
             <ToggleCreateTimer lastId = {this.state.lastId} createNewTimer = {this.setTimerList}/>
         </div>
     )
-    }
-   
+    }  
 }
