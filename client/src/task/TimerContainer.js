@@ -17,8 +17,6 @@ export default class TimerContainer extends React.Component{
        this.deleteTimer = this.deleteTimer.bind(this)
        this.cancelTimer = this.cancelTimer.bind(this)
     }
-
-
     componentDidMount(){
         fetch('/api/timers').then(res=>
             res.json()
