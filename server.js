@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-const path = require('path')
+const cors = require('cors')
+//const path = require('path')
 const port = process.env.PORT || 3001
 const generalRoutes = require('./server/routes/generalRoutes')
 const localRoutes = require('./server/routes/localRoutes')
@@ -8,6 +9,8 @@ const blogRoutes = require('./server/routes/blogRoutes')
 const facebookRoutes = require('./server/routes/facebookRoutes')
 const timerRoutes = require('./server/routes/timerRoutes')
 const profileRoutes = require('./server/routes/profileRoutes')
+app.use(cors())
+app.options('*',cors())
 //const publicDir = process.env.NODE_ENV === 'production'?'build':'public'
 app.set('view engine','ejs')  
 //app.use(express.static(path.join(__dirname,'client',`${publicDir}`)))
