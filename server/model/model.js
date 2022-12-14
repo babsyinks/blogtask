@@ -1,17 +1,11 @@
-
 const mongoose = require('mongoose') 
 const passportLocalMongoose = require('passport-local-mongoose')
 const validator = require('validator')
-
 mongoose.set("useCreateIndex", true);
-
-const mongoose1 = require('../conn').mongoose1
-//const mongoose2 = require('../conn').mongoose2
+require('../conn')
 
 const findOrCreate = require('mongoose-findorcreate') 
-
 const blogSchema = new mongoose.Schema({
-
     title:{
         type:String,
         unique:true,
@@ -110,12 +104,12 @@ userSchema.methods.getImageBufferLength = function(){
     return this.profile.profilePic.toString().length?'loaded':''
 }
 
-const User = mongoose1.model('User',userSchema)
+const User = mongoose.model('User',userSchema)
 
-const BlogPost = mongoose1.model('Blog',blogSchema)
+const BlogPost = mongoose.model('Blog',blogSchema)
 
-const Profile = mongoose1.model('Profile',profileSchema)
+const Profile = mongoose.model('Profile',profileSchema)
 
-const Timer = mongoose1.model('TimerList',timerSchema)
+const Timer = mongoose.model('TimerList',timerSchema)
 
 module.exports = {User,BlogPost,Profile,Timer}
