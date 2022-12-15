@@ -109,7 +109,7 @@ userSchema.plugin(findOrCreate)
 userSchema.methods.getImageBufferLength = function(){
     return this.profile.profilePic.toString().length?'loaded':''
 }
-
+    
 const User = mongoose1.model('User',userSchema)
 
 const BlogPost = mongoose1.model('Blog',blogSchema)
