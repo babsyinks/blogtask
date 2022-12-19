@@ -117,3 +117,4 @@ const Profile = mongoose1.model('Profile',profileSchema)
 const Timer = mongoose1.model('TimerList',timerSchema)
 
 module.exports = {User,BlogPost,Profile,Timer}
+

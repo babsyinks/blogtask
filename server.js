@@ -26,6 +26,7 @@ app.use('/auth/facebook',facebookRoutes)
 app.use((err,req,res,next)=>{ 
     console.log(err.message) 
     res.status(400).send(err.message)
+    
 })
  
 app.listen(port,function(){ 

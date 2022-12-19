@@ -11,7 +11,6 @@ mongoose1
 })
 .catch((err)=>{
     console.log(`Connection to Db failed: ${err.message}`)
-   
 })
 
 module.exports = {mongoose1}
