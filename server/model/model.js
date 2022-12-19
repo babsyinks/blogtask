@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose') 
 const passportLocalMongoose = require('passport-local-mongoose')
 const validator = require('validator')
@@ -6,7 +5,6 @@ const validator = require('validator')
 mongoose.set("useCreateIndex", true);
 
 const mongoose1 = require('../conn').mongoose1
-//const mongoose2 = require('../conn').mongoose2
 
 const findOrCreate = require('mongoose-findorcreate') 
 
